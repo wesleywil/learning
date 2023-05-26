@@ -1,0 +1,23 @@
+What is the difference between the "WHERE" and "HAVING" clauses in SQL?
+
+"WHERE is a clause used to filter rows base on an conditional SQL query,
+ while HAVING clause is used to filter groups base on an condition in an grouped(GROUP BY) query.
+ The 'WHERE' clause is used with individual rows, whereas the 'HAVING' clause is used with groups created by the 'GROUP BY' clause."
+
+ How do you join tables in SQL? Explain the different types of joins.
+
+ "Joining tables in SQL allows you to combine data from multiple tables based on a related column. There are different types of joins:
+
+ INNER JOIN: Return records that have matching values in both tables.
+ LEFT JOIN: Returns all records from the left table and the matching records the right table.
+ RIGHT JOIN: Return all records from the right table and the matching records from the left table.
+ FULL JOIN: Return all records when there is a match in either the left or right table.
+
+
+ What is the purpose of the "GROUP BY" clause in SQL? Provide an example query.
+
+ "The 'GROUP BY' clause in SQL is used to group rows based on one or more columns. It is often used in conjunction with aggregate functions like COUNT, SUM, AVG, etc. An Example:
+    SELECT category, COUNT(*) FROM products GROUP BY category;
+ "
+
+ Paramos na pergunta 6
