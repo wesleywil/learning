@@ -102,3 +102,34 @@ FROM Departments d
 LEFT JOIN Employees e ON d.id = e.department_id
 GROUP BY d.id, d.name;
 
+-- UNION
+SELECT name FROM Employees WHERE age < 30
+UNION 
+SELECT name FROM Employees WHERE department_id = 1;
+
+-- UNION ALL
+SELECT name FROM Employees WHERE age < 30
+UNION ALL
+SELECT name FROM Employees WHERE department_id = 1;
+
+-- INDEX
+CREATE INDEX idx_email ON Customers (email);
+
+-- ORDER BY
+SELECT * FROM Employees ORDER BY name ASC/DESC;
+
+-- CREATE DATABASE
+CREATE DATABASE database_name;
+
+-- SELECT TOP N
+-- top 2
+SELECT * FROM Employees LIMIT 2;
+
+-- WILDCARD CHARACTERS
+-- name start with J
+SELECT * FROM Employees WHERE name LIKE 'J%';
+-- name ends with son
+SELECT * FROM Employees WHERE name LIKE '%son';
+-- name contain doe anywhere in the name
+SELECT * FROM Employees WHERE name LIKE '%doe%';
+

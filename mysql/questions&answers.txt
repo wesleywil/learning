@@ -20,4 +20,73 @@ What is the difference between the "WHERE" and "HAVING" clauses in SQL?
     SELECT category, COUNT(*) FROM products GROUP BY category;
  "
 
- Paramos na pergunta 6
+How do you insert records into a table in MySQL? Provide an example.
+
+"INSERT INTO table_name (column1, column2, ...) VALUES (value1, value2, ...);"
+
+Explain the concept of database normalization and its benefits.
+
+"Database normalization is the process of organizing the data in a database to eliminate redundancy and improve data integrity. It involves breaking down a table into multiple smaller tables and establishing relationships between them. The benefits of normalization include reducing data duplication, improving data consistency, and facilitating efficient data retrieval and modification."
+
+How do you update records in a table using SQL? Provide an example.
+
+"UPDATE table_name SET column1 = value1, column2 = value2 WHERE condition;"
+
+What is the difference between the "UNION" and "UNION ALL" operators in SQL?
+
+"The "UNION" operator combines the result sets of two or more SELECT statements into a single result set, excluding duplicate rows. The "UNION ALL" operator also combines the result sets but includes all rows, including duplicates."
+
+What is an index in MySQL? Why is it important?
+
+"An index in MySQL is a data structure that improves the speed of data retrieval operations on database tables. It allows for faster searching, sorting, and filtering of data. Indexes are important for optimizing query performance, especially on large tables."
+
+How do you delete records from a table in MySQL? Provide an example.
+
+"DELETE FROM table_name WHERE condition;"
+
+Explain the ACID properties in the context of database transactions.
+
+"ACID (Atomicity, Consistency, Isolation, Durability) properties are a set of properties that ensure reliable and robust database transactions:
+
+Atomicity: Transactions are treated as a single, indivisible unit of work. Either all the changes are committed, or none of them are.
+Consistency: Transactions bring the database from one valid state to another. The integrity constraints are maintained.
+Isolation: Concurrent transactions are isolated from each other to prevent interference and ensure data integrity.
+Durability: Committed transactions are permanently saved and can survive system failures."
+
+What is the purpose of the "ORDER BY" clause in SQL? Provide an example query.
+
+"The "ORDER BY" clause in SQL is used to sort the result set of a query based on one or more columns."
+
+EXAMPLE: SELECT * FROM table_name ORDER BY column_name ASC/DESC;
+
+How do you create a new database in MySQL? Provide an example.
+
+"CREATE DATABASE database_name;"
+
+What is a primary key in a database table? Why is it necessary?
+
+"A primary key in a database table is a unique identifier for each record in the table. It ensures that each row can be uniquely identified and helps maintain data integrity. A primary key constraint ensures that the key is unique and not null."
+
+Explain the concept of foreign keys and how they are used to establish relationships between tables.
+
+"Foreign keys are used to establish relationships between tables in a relational database. A foreign key in one table refers to the primary key of another table, creating a link between them. It enforces referential integrity and helps maintain data consistency."
+
+How do you retrieve the top N records from a table in MySQL?
+
+"To retrieve the top N records from a table in MySQL, you can use the "LIMIT" clause in the following way:"
+"SELECT * FROM table_name LIMIT N;"
+
+What are stored procedures in MySQL? How are they different from regular SQL queries?
+
+"Stored procedures in MySQL are precompiled database objects that encapsulate a set of SQL statements. They are stored in the database and can be invoked repeatedly. Stored procedures allow for modular and reusable code, improved performance, and enhanced security compared to regular SQL queries."
+
+How do you optimize a SQL query for better performance? Provide some techniques.
+
+To optimize a SQL query for better performance, you can:
+
+Use indexes on columns involved in joins and search conditions.
+Minimize the use of wildcard characters at the beginning of the search pattern.
+Avoid using functions or expressions in WHERE clauses.
+Optimize the database schema through proper normalization and denormalization.
+Use appropriate caching strategies.
+Analyze and monitor query performance using tools and EXPLAIN statement.
