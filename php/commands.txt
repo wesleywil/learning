@@ -1,0 +1,2 @@
+RUN PHP SERVER
+php -S localhost:8000 <file_name>.php
