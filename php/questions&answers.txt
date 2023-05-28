@@ -1,0 +1,97 @@
+What is PHP?
+
+PHP stands for Hypertext Preprocessor. It is a server-side scripting language primarily used for web development. It can generate dynamic web pages and interact with databases.
+
+What are the advantages of using PHP?
+
+"Some advantages of using PHP include its simplicity, widespread usage and community support, compatibility with various databases, seamless integration with HTML, ability to handle forms and user input easily, and cost-effectiveness (it is an open-source language)."
+
+
+What are the differences between PHP and other programming languages like JavaScript or Python?
+
+"PHP is mainly used for server-side scripting, while JavaScript is primarily used for client-side scripting. Python is a general-purpose programming language used in various domains. PHP is embedded within HTML, whereas JavaScript can be embedded within HTML or run as a standalone script. Additionally, PHP has specific features tailored for web development, such as built-in support for accessing databases."
+
+How do you declare a variable in PHP?
+
+"In PHP, variables are declared using the dollar sign ($) followed by the variable name. For example: $name = "John";"
+
+
+Explain the difference between single quotes ('') and double quotes ("") in PHP.
+
+Single quotes ('') treat everything within them as a literal string, whereas double quotes ("") allow variable interpolation and escape sequences. In double quotes, variables will be evaluated and their values will be included in the resulting string.
+
+
+What is the purpose of the "echo" statement in PHP?
+
+"The "echo" statement is used to output data or strings to the browser or the client. It is commonly used to display HTML, variables, or other dynamic content."
+
+
+How do you include a file in PHP?
+
+
+
+"PHP provides the "include" and "require" statements to include files. The "include" statement will generate a warning and continue execution if the file is not found, while the "require" statement will generate a fatal error and stop execution if the file is not found."
+
+What is the difference between include() and require() in PHP?
+
+"The "include()" statement includes a file and generates a warning if the file is not found, while the "require()" statement includes a file and generates a fatal error if the file is not found. In other words, "require()" is stricter and halts the execution if the file is missing."
+
+Explain the concept of "superglobals" in PHP.
+
+"Superglobals are built-in PHP variables that are always accessible from any scope within a script. They include variables like $_GET, $_POST, $_SESSION, $_SERVER, etc. They allow access to information such as form data, server and environment variables, and user session data."
+
+How do you connect to a MySQL database in PHP?
+
+"To connect to a MySQL database in PHP, you can use the "mysqli" or "PDO" extension. Both provide functions and methods to establish a connection, execute queries, and fetch results from the database."
+
+
+How do you handle errors in PHP? What are the different error types?
+
+"PHP provides error handling mechanisms such as error_reporting, display_errors, and error_log directives in the configuration file (php.ini). Additionally, you can use the error_reporting() function and set_error_handler() function to customize error handling in your PHP code. "
+
+Explain the concept of sessions in PHP.
+
+"Sessions in PHP allow you to store and retrieve data across multiple requests for a specific user. A unique session ID is assigned to each user, which is stored in a cookie or passed through the URL. Session data can be used to maintain user-specific information or track user activity."
+
+What is the difference between GET and POST methods in PHP?
+
+"GET and POST are HTTP methods used to send data from the client (browser) to the server. GET sends data as part of the URL, while POST sends data in the request body. GET parameters are visible in the URL, while POST parameters are not. GET is suitable for retrieving data, while POST is suitable for sending data securely and performing actions."
+
+
+How do you sanitize user input in PHP to prevent security vulnerabilities?
+
+"To sanitize user input in PHP, you can use functions like htmlspecialchars() to convert special characters to their HTML entities and prevent cross-site scripting (XSS) attacks. Additionally, you should use prepared statements or parameterized queries when interacting with databases to prevent SQL injection attacks."
+
+
+What is object-oriented programming (OOP) in PHP? Explain the basic principles.
+
+"Object-oriented programming is a programming paradigm that organizes code into objects, which are instances of classes. The basic principles of OOP include encapsulation (data and methods are bundled together in objects), inheritance (classes can inherit properties and methods from parent classes), and polymorphism (objects of different classes can be used interchangeably through shared interfaces)."
+
+
+How do you create a class and instantiate an object in PHP?
+
+To create a class in PHP, you use the "class" keyword followed by the class name and the class definition within curly braces. To instantiate an object, you use the "new" keyword followed by the class name and parentheses. For example:
+
+class MyClass {
+  // Class definition
+}
+
+$myObject = new MyClass();
+
+
+What is the difference between abstract classes and interfaces in PHP?
+
+
+Abstract classes and interfaces are both used to define common behavior that can be implemented by other classes. However, interfaces only provide method signatures without any implementation, while abstract classes can contain both method declarations and some implementation. A class can implement multiple interfaces, but it can only inherit from one abstract class.
+
+How do you handle file uploads in PHP?
+
+File uploads in PHP involve using the "$_FILES" superglobal to access the uploaded file information. You can move the uploaded file to a desired location using functions like move_uploaded_file(). It is important to validate and sanitize file uploads to prevent security vulnerabilities.
+
+Explain the concept of cookies in PHP and how they are used.
+
+Cookies are small text files that are stored on the client-side (browser) to store data. In PHP, you can set cookies using the "setcookie()" function, specifying the cookie name, value, expiration time, and other parameters. Cookies can be used to store user preferences, track user sessions, and personalize website experiences.
+
+How do you secure a PHP application against SQL injection attacks?
+
+To secure a PHP application against SQL injection attacks, you should use prepared statements or parameterized queries with placeholders instead of directly inserting user input into SQL queries. Prepared statements separate the query logic from the data and automatically escape user input, preventing SQL injection vulnerabilities.
