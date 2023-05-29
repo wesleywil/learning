@@ -1,0 +1,192 @@
+
+
+How would you filter out unwanted characters from a string in PHP?
+
+there's two ways, the best one would be to use the preg_replace() function the other one, that will only work if you need to replace only one character, this way you can use the str_replace() function
+
+Write a PHP function to check if a given string is a palindrome.
+
+function palindrome($string)
+{
+    if (strrev($string) == $string) {
+        return 1;
+    } else {
+        return 0;
+    }
+}
+
+How do you reverse a string in PHP without using any built-in functions?
+
+echo strrev("Reverse this string");
+
+Write a PHP script to count the number of vowels in a given string.
+
+function countVowels($string)
+{
+    $str = strtolower($string);
+
+    // define an array of vowels
+    $vowels = array('a', 'e', 'i', 'o', 'u');
+
+    // Initialize counter
+    $count = 0;
+
+    //Iterate through each character in the string
+    for ($i = 0; $i < strlen($str); $i++) {
+        if (in_array($str[$i], $vowels)) {
+            // Increment the count if it is a vowel
+            $count++;
+        }
+    }
+
+    return $count;
+}
+
+How would you remove duplicate elements from an array in PHP?
+
+using the array_unique function in PHP
+
+Write a PHP function to check if a given number is prime.
+
+function isPrime($number)
+{
+    if ($number < 2) {
+        return false;
+    }
+    // Check for divibility by numbers up to the square root of the number
+    for ($i = 2; $i <= sqrt($number); $i++) {
+        if ($number % $i === 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+How do you find the length of a string in PHP?
+
+echo strlen("FOUR");
+
+Write a PHP program to find the largest number in an array.
+
+echo (max(2,4,3,1). "<br>");
+
+How would you capitalize the first letter of each word in a string using PHP?
+
+you can use the ucwords function to do that.
+
+Write a PHP function to generate a random password with a specified length.
+
+function generateRandomPassword($length)
+{
+    $characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()-_=+';
+    $password = '';
+
+    $charactersCount = strlen($characters);
+
+    for ($i = 0; $i < $length; $i++) {
+        $randomIndex = rand(0, $charactersCount - 1);
+        $password .= $characters[$randomIndex];
+    }
+
+    return $password;
+}
+
+How do you convert a string to lowercase in PHP?
+
+strtolower($string);
+
+Write a PHP script to check if a given year is a leap year.
+
+function isLeapYear($year)
+{
+    // if year is divisible by 4
+    if ($year % 4 === 0) {
+        // if divisible by 100, it should be also divisible by 400 to be a leap year
+        if ($year % 100 === 0) {
+            return ($year % 400 === 0);
+        }
+        return true;
+    }
+    return false;
+}
+
+How would you find the sum of all numbers in an array using PHP?
+
+
+echo array_sum(array(1, 2, 3, 4, 5, 6)), "<br><br>";
+
+Write a PHP function to remove whitespace from the beginning and end of a string.
+
+function removeWhitespaces($string)
+{
+    return trim($string);
+}
+
+How do you sort an array in ascending order using PHP?
+
+
+$numbers = array(4, 6, 2, 22, 11);
+sort($numbers);
+$newArray = array();
+$arrlength = count($numbers);
+for ($x = 0; $x < $arrlength; $x++) {
+    array_push($newArray, $numbers[$x]);
+}
+
+Write a PHP program to reverse the order of words in a sentence.
+
+strrev("Worlds in an sentence");
+
+How would you check if a given string contains a specific substring in PHP?
+
+function containsSubString($string, $substring)
+{
+    // check if the substring is present in the string
+    if (strpos($string, $substring) !== false) {
+        return true;
+    }
+    return false;
+}
+
+
+Write a PHP function to calculate the factorial of a number.
+
+function factorial($number)
+{
+    // Base case: factorial of 0 is 1
+    if ($number === 0) {
+        return 1;
+    }
+
+    // Recursive case: multipliy the number by factorial of (number -1);
+    return $number * factorial($number - 1);
+}
+
+
+How do you check if a variable is empty or not in PHP?
+
+we can use the built in empty function empty($variable);
+
+Write a PHP script to find the second smallest number in an array.
+
+function findSecondSmallest($array)
+{
+    $smallest = PHP_INT_MAX;
+    $secondSmallest = PHP_INT_MAX;
+
+    // Iterate through each element in the array
+    foreach ($array as $num) {
+        // If the current element is smaller than the smallest, update both smallest and second smallest
+        if ($num < $smallest) {
+            $secondSmallest = $smallest;
+            $smallest = $num;
+        } elseif ($num < $secondSmallest && $num != $smallest) {
+            // If the current element is smaller than the second smallest (but not equal to smallest), update the second smallest
+            $secondSmallest = $num;
+        }
+    }
+
+    // Return the second smallest number
+    return $secondSmallest;
+}
+
