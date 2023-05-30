@@ -1,0 +1,20 @@
+How can you determine the length of a string in JavaScript?
+How do you convert a string to lowercase or uppercase in JavaScript?
+Write a function to reverse a string in JavaScript.
+How can you check if a string contains a specific substring in JavaScript?
+Write a function to count the occurrences of a character in a string.
+How do you remove whitespace from the beginning and end of a string in JavaScript?
+Write a function to capitalize the first letter of each word in a string.
+How can you concatenate two or more strings in JavaScript?
+Write a function to check if a string is a palindrome (reads the same forwards and backwards).
+How do you replace a specific substring with another substring in a string in JavaScript?
+Write a function to truncate a string if it exceeds a certain length, adding an ellipsis at the end if necessary.
+How can you split a string into an array of substrings based on a delimiter?
+Write a function to check if two strings are anagrams (contain the same characters in a different order).
+How do you extract a portion of a string (substring) in JavaScript?
+Write a function to remove all occurrences of a specific character from a string.
+How can you convert a string into an array of characters in JavaScript?
+Write a function to count the number of words in a string.
+How do you convert a string to a number in JavaScript?
+Write a function to find the index of the first occurrence of a character or substring in a string.
+How can you repeat a string a certain number of times in JavaScript?
