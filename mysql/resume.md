@@ -1,0 +1,21 @@
+# summary MYSQL
+
+- SELECT → Retrieve data
+- INSERT INTO → Add data
+- UPDATE → Modify Data
+- DELETE → Delete data
+- WHERE → Filter by condition
+- JOIN → Combine rows from multiple tables
+- GROUP BY → Group rows based on one or more columns
+- HAVING → Filter Group rows based on a specific condition
+- ORDER BY → Sort the result based on one ore more columns
+- LIMIT → Restrict the number of rows in a result
+- AVG → Calculate the average
+- SUM → Sum specific columns
+- COUNT → Counts the number of rows or non-null values in a specified column.
+- MAX - MIN → Returns the maximum/minimum value from a specified column.
+- DISTINCT → Used to retrieve unique values from a specified column.
+- AS → Used to assign an alias to a column or table.
+- INDEX → Used to create an index on one or more columns, improving query performance.
+- CONSTRAINT → Used to define rules for the data in a table, such as primary key or foreign key constraints.
+- VIEW → A virtual table created from the result of a query, which can be used like a regular table.

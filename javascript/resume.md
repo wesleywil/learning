@@ -1,0 +1,30 @@
+# summary JAVASCRIPT
+
+- setTimeout() → Executes a function or evaluates an expression after a specified delay.
+- setInterval() → Repeatedly executes a function or evaluates an expression at specified intervals.
+- parseInt() → Converts a string to an integer.
+- parseFloat() → Converts a string to a floating-point number.
+- Math.random() → Generates a random number between 0 and 1.
+- Math.floor() → Rounds a number down to the nearest integer.
+- Math.ceil() → Rounds a number up to the nearest integer.
+- Math.round() → Rounds a number to the nearest integer.
+- Array.isArray() → Checks if a value is an array.
+- Array.push() → Adds elements to the end of an array.
+- Array.pop() → Removes the last element from an array.
+- Array.join() → Joins all elements of an array into a string.
+- Array.slice() → Creates a new array by extracting a portion of an existing array.
+- Array.forEach() → Executes a provided function once for each array element.
+- map( ) → creates a new array with the results of calling a provided function on every element in this array.
+- filter( ) → creates a new array with only elements that pass the condition inside the provided function.
+- sort( ) → used to arrange/sort array's elements either in ascending or descending order.
+- concat( ) → used to merge two or more arrays and returns a new array, without changing the existing arrays.
+- every( ) → checks every element in the array that passes the condition, returning true or false as appropriate.
+- some( ) → checks if at least one element in the array that passes the condition, returning true or false as appropriate.
+- includes( ) → checks if an array includes the element that passes the condition, returning true or false as appropriate.
+- reduce( ) → applies a function against an accumulator and each element in the array to reduce it to a single value.
+- find( ) → returns the value of the first element in an array that passes the test in a testing function.
+- findIndex( ) → returns the index of the first element in an array that passes the test in a testing function.
+- indexOf( ) → returns the index of the first occurrence of the specified element in the array, or -1 if it is not found.
+- fill( ) → fills the elements in an array with a static value and returns the modified array.
+- String.length → Returns the length of a string.
+- String.indexOf() → Returns the index of the first occurrence of a specified value in a string.

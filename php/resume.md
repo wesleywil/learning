@@ -1,0 +1,22 @@
+# summary PHP
+
+- echo() → Used to output text or variables to the browser.
+- print() → Similar to echo, used to output text or variables to the browser.
+- var_dump() → Displays structured information about one or more variables.
+- strlen() → Returns the length of a string.
+- strpos() → Returns the position of the first occurrence of a substring in a string.
+- substr() → Extracts a substring from a string.
+- explode() → Splits a string into an array by a specified delimiter.
+- implode() → Joins the elements of an array into a string using a specified delimiter.
+- isset() → Checks if a variable is set and not null.
+- empty() → Checks if a variable is empty.
+- is_array() → Checks if a variable is an array.
+- count() → Returns the number of elements in an array or the length of a string.
+- array_push() → Adds one or more elements to the end of an array.
+- array_pop() → Removes and returns the last element of an array.
+- array_merge() → Merges two or more arrays into a single array.
+- in_array() → Checks if a value exists in an array.
+- file_get_contents() → Reads the contents of a file into a string.
+- file_put_contents() → Writes a string to a file.
+- header() → Sends a raw HTTP header to the browser.
+- mysqli_query() → Executes a MySQL query on a database connection.
